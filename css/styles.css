@@ -1,0 +1,66 @@
+body {
+    font-family: 'Oswald', sans-serif;
+    font-size: 24px;
+    line-height: 36px;
+    color: #2d3c49;
+}
+
+h1 {
+    font-size: 100px;
+}
+
+h2 {
+    color: #7d97ad;
+    font-size: 50px;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    color: #2d3c49;
+}
+
+.row {
+    margin-bottom: 20px;
+}
+
+.logo {
+    max-height: 100px;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.line {
+    height: 5px;
+    background-color: #2d3c49;
+}
+
+.references-list img {
+    margin-bottom: 10px;
+    max-height: 170px;
+}
+
+.fab {
+    font-size: 50px;
+}
+
+@media screen and (max-width: 767px) {
+    body {
+        font-size: 18px;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    .logo {
+        max-height: 50px;
+        margin-top: 10px;
+    }
+}
