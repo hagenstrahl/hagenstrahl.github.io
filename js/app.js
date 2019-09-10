@@ -57,14 +57,14 @@ function cardsMatched() {
 function lockCards() {
     for (let card of openedCards) {
         card.classList.remove("open", "show");
-        card.classList.add("match");
+        card.classList.add("match", "pulse");
     }
     openedCards = [];
 }
 
 function closeCards() {
     for (let card of openedCards) {
-        card.classList.remove("open", "show");
+        card.classList.remove("open", "show", "mismatch", "rubberBand");
     }
     openedCards = [];
 }
@@ -109,7 +109,13 @@ function showCongratsPopup() {
     neededTime.textContent = timer;
 
     const popupContainer = document.querySelector(".popup-container");
-    popupContainer.classList.add("show-popup");
+    popupContainer.classList.add("show-popup", "fadeIn");
+}
+
+function animateMismatch() {
+    for (let card of openedCards) {
+        card.classList.add("mismatch", "rubberBand");
+    }
 }
 
 function cardClicked(event) {
@@ -145,22 +151,31 @@ function cardClicked(event) {
         updateStars();
 
         // cards matched
-        if (openedCards.length === 2 && cardsMatched()) {
-            lockCards();
-            foundPairs++;
+        if (openedCards.length === 2) {
+            if (cardsMatched()) {
+                lockCards();
+                foundPairs++;
 
-            // found all pairs
-            if (foundPairs === 8) {
-                gameRunning = false;
-                showCongratsPopup();
+                // found all pairs
+                if (foundPairs === 8) {
+                    gameRunning = false;
+                    setTimeout(showCongratsPopup, 600);
+                }
+            } else {
+                animateMismatch();
             }
         }
     }
 }
 
+function deleteAnimation(e) {
+    e.target.classList.remove( "pulse", "rubberBand");
+}
+
 function setUpCardEvents() {
     const deck = document.querySelector(".deck");
     deck.addEventListener("click", cardClicked);
+    deck.addEventListener("animationend", deleteAnimation)
 }
 
 function initDeck() {
@@ -170,7 +185,7 @@ function initDeck() {
     for (let i = 0; i < deck.length; i++) {
         // create card list item
         const listItem = document.createElement("li");
-        listItem.classList.add("card");
+        listItem.classList.add("card", "animated");
         listItem.setAttribute("card", deck[i]);
 
         //create icon for the card
@@ -220,6 +235,7 @@ function resetGame() {
     initRating();
 
     foundPairs = 0;
+    openedCards = [];
 
     //reset timer
     gameRunning = 0;
@@ -236,7 +252,8 @@ function setUpResetButton() {
         resetGame();
 
         const popupContainer = document.querySelector(".popup-container");
-        popupContainer.classList.remove("show-popup");
+        popupContainer.classList.remove( "fadeIn", "show-popup");
+        popupContainer.classList.add("fadeOut")
     });
 }
 
