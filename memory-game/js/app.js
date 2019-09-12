@@ -169,7 +169,7 @@ function cardClicked(event) {
 }
 
 function deleteAnimation(e) {
-    e.target.classList.remove( "pulse", "rubberBand");
+    e.target.classList.remove("pulse", "rubberBand");
 }
 
 function setUpCardEvents() {
@@ -252,7 +252,7 @@ function setUpResetButton() {
         resetGame();
 
         const popupContainer = document.querySelector(".popup-container");
-        popupContainer.classList.remove( "fadeIn", "show-popup");
+        popupContainer.classList.remove("fadeIn", "show-popup");
         popupContainer.classList.add("fadeOut")
     });
 }
