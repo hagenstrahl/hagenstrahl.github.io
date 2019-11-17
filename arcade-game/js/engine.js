@@ -28,6 +28,8 @@ var Engine = (function (global) {
     canvas.height = 606;
     doc.body.appendChild(canvas);
 
+    let wins = 0;
+
     /* This function serves as the kickoff point for the game loop itself
      * and handles properly calling the update and render methods.
      */
@@ -68,6 +70,9 @@ var Engine = (function (global) {
         main();
     }
 
+    /*
+    This function checks whether the player collisions with a bug and if so it resets the game.
+     */
     function checkCollisions() {
         for (const enemy of allEnemies) {
             if (enemy.x <= (player.x + 50) && (player.x + 50) <= (enemy.x + 101) && player.y == enemy.y) {
@@ -77,7 +82,18 @@ var Engine = (function (global) {
         }
     }
 
-    //TODO constants for playerCollisionRange, moveRangeX, moveRangeY and so on ...
+    /*
+        This function checks whether the player reached the water fields and if so it
+        updates the wins counter and resets the game.
+     */
+    function checkWin() {
+        if (player.y == -50) {
+            wins++;
+            const winCounter = document.getElementById('wins');
+            winCounter.innerText = wins.toString();
+            reset();
+        }
+    }
 
     /* This function is called by main (our game loop) and itself calls all
      * of the functions which may need to update entity's data. Based on how
@@ -90,8 +106,8 @@ var Engine = (function (global) {
      */
     function update(dt) {
         updateEntities(dt);
-        // TODO game finished --> row 0 or collision with bug --> reset function in engine.js
         checkCollisions();
+        checkWin();
     }
 
     /* This is called by the update function and loops through all of the

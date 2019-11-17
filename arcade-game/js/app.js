@@ -1,3 +1,7 @@
+// movement
+const movementX = 101;
+const movementY = 85;
+
 // Enemies our player must avoid
 function Enemy() {
     // Variables applied to each of our instances go here,
@@ -6,8 +10,8 @@ function Enemy() {
     // The image/sprite for our enemies, this uses
     // a helper we've provided to easily load images
     this.sprite = 'images/enemy-bug.png';
-    this.x = Math.random() * 202;
-    this.y = (Math.floor(Math.random() * 3) + 1) * 85 - 50;
+    this.x = Math.random() * movementX * 2;
+    this.y = (Math.floor(Math.random() * 3) + 1) * movementY - 50;
     this.speed = Math.floor(Math.random() * 500 + 150);
 };
 
@@ -17,11 +21,11 @@ Enemy.prototype.update = function (dt) {
     // You should multiply any movement by the dt parameter
     // which will ensure the game runs at the same speed for
     // all computers.
-    if (this.x <= 505) {
+    if (this.x <= movementX * 5) {
         this.x += dt * this.speed;
     } else {
-        this.x = -101;
-        this.y = (Math.floor(Math.random() * 3) + 1) * 85 - 50;
+        this.x = -movementX;
+        this.y = (Math.floor(Math.random() * 3) + 1) * movementY - 50;
     }
     //this.render();
     //setTimeout(this.update, (2000 * dt));
@@ -36,47 +40,46 @@ Enemy.prototype.render = function () {
 // This class requires an update(), render() and
 // a handleInput() method.
 
-
 class Player {
     constructor() {
         this.sprite = 'images/char-boy.png';
-        this.x = 202;
-        this.y = 375;
+        this.x = movementX * 2;
+        this.y = movementY * 5 - 50;
     }
 
     update() {
-        this.render();
     }
 
     render() {
         ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
     }
 
+    /*
+    This functions converts the players input into the new positions
+     */
     handleInput(arrowKey) {
         switch (arrowKey) {
             case 'left':
                 if (this.x > 0) {
-                    this.x-=101;
+                    this.x-=movementX;
                 }
                 break;
             case 'right':
-                if (this.x < 404) {
-                    this.x+=101;
+                if (this.x < movementX * 4) {
+                    this.x+=movementX;
                 }
                 break;
             case 'up':
                 if (this.y > 0) {
-                    this.y -= 85;
+                    this.y -= movementY;
                 }
                 break;
             case 'down':
-                if (this.y < 404) {
-                    this.y += 85;
+                if (this.y < movementY * 5 - 50) {
+                    this.y += movementY;
                 }
                 break;
         }
-
-        this.update();
     }
 }
 
