@@ -2,65 +2,120 @@ body {
     font-family: 'Oswald', sans-serif;
     font-size: 24px;
     line-height: 36px;
-    color: #2d3c49;
+}
+
+h1,
+h2,
+.logo {
+    color: #6380FF;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Abril Fatface', cursive;
 }
 
 h1 {
-    font-size: 100px;
-}
-
-h2 {
-    color: #7d97ad;
     font-size: 50px;
 }
 
-img {
-    max-width: 100%;
+.nav-links div {
+    padding: 0;
 }
 
-a {
-    color: #2d3c49;
+nav a {
+    padding: 14px 16px;
+    text-decoration: none;
+    float: right;
+    text-align: center;
+    font-size: 26px;
+    width: 100%;
+    color: #6380FF;
+}
+
+nav a:hover {
+    background-color: #6380FF;
+    color: white;
+    text-decoration: none;
 }
 
 .row {
-    margin-bottom: 20px;
+    margin-bottom: 50px;
+}
+
+.bg-black {
+    background-color: black;
+}
+
+.profile-picture {
+    border-radius: 50%;
+    max-width: 100%;
+    margin-bottom: 30px;
+}
+
+.headline-border {
+    padding: 30px;
+    margin: auto;
+}
+
+.headline {
+    max-width: 500px;
+    text-align: center;
+}
+
+header .headline {
+    position: relative;
+    left: -100px;
+    margin: 0;
+    margin-bottom: 30px;
 }
 
 .logo {
-    max-height: 100px;
-    margin-top: 20px;
-    margin-right: 10px;
-}
-
-.line {
-    height: 5px;
-    background-color: #2d3c49;
-}
-
-.references-list img {
+    font-size: 80px;
     margin-bottom: 10px;
-    max-height: 170px;
 }
 
-.fab {
-    font-size: 50px;
+.sm-link {
+    margin: 0 30px;
 }
 
-@media screen and (max-width: 767px) {
-    body {
-        font-size: 18px;
-    }
-
+@media screen and (max-width: 1200px) {
     h1 {
-        font-size: 50px;
+        font-size: 40px;
     }
 
-    h2 {
-        font-size: 25px;
+    .headline {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+    header .headline {
+        position: static;
+        left: 0;
+        margin: auto;
+        margin-bottom: 30px;
     }
 
-    .logo {
-        max-height: 50px;
+    .row {
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    img,
+    .profile-picture {
+        width: 100%;
+    }
+
+    .headline {
+        max-width: 100%;
+    }
+
+    header .headline {
         margin-top: 10px;
     }
 }
