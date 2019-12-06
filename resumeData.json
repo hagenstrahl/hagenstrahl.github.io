@@ -1,0 +1,148 @@
+{
+  "main": {
+    "name": "Hagen Strahl",
+    "occupation": "Frontend Developer",
+    "description": "Mein berufliches Leben hat schon viele Stationen gesehen, die meinen Erfahrungsschatz immer weiter wachsen lassen haben. Zu Programmieren war dabei mein ständiger Wegbegleiter. Nach harter Arbeit habe ich es nun endlich geschafft: Ich bin ein Frontend Developer",
+    "image": "Lichtbild.png",
+    "bio": "Geboren wurde ich Ende der Achtziger Jahre im wunderschönen Mecklenburg Vorpommern. Schon früh begeisterte ich mich für das Programmieren und auch während verschiedener Stationen in meinem Leben ließ es mich nie ganz los. Nach einer Ausbildung zum Fachinformatiker für Anwendungsentwicklung, vielen Jahren als System Administrator, einer angefangenen Ausbildung als Mediengestalter Digital/Print und zuletzt eine Zertifizierung bei Udacity. Erst vor Kurzem habe ich so richtig mit Web Frontend angefangen. Daher ist mir bewusst, dass ich noch am Anfang stehe und ich noch viel zu lernen habe. In diesem Beruf kann man sowieso nie auslernen. Jedoch habe ich schon ein paar persönliche Erfolge erzielen können, die Sie unter den Referenzen sehen können.",
+    "contactmessage": "Sie haben Fragen? Sie möchten mich kontaktieren? Dann benutzen Sie einfach das Formular oder rufen mich an. Ich freue mich von Ihnen zu hören.",
+    "email": "hagen.strahl@gmail.com",
+    "phone": "+49 172 1541020",
+    "address": {
+      "street": "Glambecker Straße 22",
+      "city": "Neustrelitz",
+      "state": "(Your State)",
+      "zip": "17235"
+    },
+    "website": "http://www.timbakerdev.com",
+    "resumedownload": "https://drive.google.com/file/d/1GhmtPwtNgSk564TIS5vUzmAay9aLfc7s/view?usp=sharing",
+    "social": [{
+        "name": "linkedin",
+        "url": "https://www.linkedin.com/in/hagenstrahl/",
+        "className": "fa fa-linkedin"
+      },
+      {
+        "name": "github",
+        "url": "https://github.com/hagenstrahl/",
+        "className": "fa fa-github"
+      }
+    ]
+  },
+  "resume": {
+    "skillmessage": "Wie es sich für einen Frontend Developer gehört, kenne ich natürlich unter anderem einige JavaScript-Technologien",
+    "education": [{
+        "school": "Zertifizierung - Udacity",
+        "degree": "Frontend Developer",
+        "graduated": "Aug 2019 - Nov 2019 (abgebrochen)",
+        "description": "Design und Entwicklung von Medienproduktion mit Fokus auf TYPO3 und Wordpress"
+      },
+      {
+        "school": "Berufsausbildung - publiccom GmbH",
+        "degree": "Mediengestalter Digital/Print",
+        "graduated": "Sep 2018 - Apr 2019 (abgebrochen)",
+        "description": "Design und Entwicklung von Medienproduktion mit Fokus auf TYPO3 und Wordpress"
+      },
+      {
+        "school": "Berufsausbildung - arvato systems | Technologies",
+        "degree": "Fachinformatiker für Anwendungsentwicklung",
+        "graduated": "Aug 2010 - Jul 2013",
+        "description": "Software-Entwicklung mit Schwerpunkt auf C#, WPF, ASP.NET"
+      },
+      {
+        "school": "Studium - Universität Rostock",
+        "degree": "Bachelor of Science",
+        "graduated": "Okt 2008 - Jul 2010 (abgebrochen)",
+        "description": "Mathematik und Physik"
+      },
+      {
+        "school": "Schule",
+        "degree": "allgemeine Hochschulreife",
+        "graduated": "Jul 2008",
+        "description": "Leistungsfächer: Mathematik, Physik, Informatik"
+      }
+    ],
+    "work": [{
+        "company": "KDW Technical Help GmbH",
+        "title": "Sachbearbeiter",
+        "years": "Mai 2019 - Jetzt",
+        "description": "telefonischer Support im Mobilfunkbereich"
+      },
+      {
+        "company": "NEUCOM GmbH",
+        "title": "IT-Servicetechniker",
+        "years": "Jul 2017 - Aug 2018",
+        "description": "Planung, Beschaffung, Einrichtung und Betreuung von Hard- und Software, Entwicklung von Websites"
+      },
+      {
+        "company": "Bundeswehr",
+        "title": "IT Gast",
+        "years": "Jul 2015 - Mai 2017",
+        "description": "Betreuung und Wartung von IT und Waffensystemen auf einem Kriegsschiff der Deutschen Marine"
+      },
+      {
+        "company": "Gecko GmbH",
+        "title": "Junior Developer",
+        "years": "Sep 2013 - Apr 2015",
+        "description": "Planung und Umsetzung von Software-Produkten für AIDA Cruises"
+      },
+      {
+        "company": "arvato systems | Technologies",
+        "title": "Facharbeiter Praktikant",
+        "years": "Jul 2013 - Sep 2013",
+        "description": "Umsetzung von Software-Produkten"
+      }
+    ],
+    "skills": [{
+        "name": "TypeScript",
+        "level": "50%"
+      },
+      {
+        "name": "ReactJs",
+        "level": "30%"
+      },
+      {
+        "name": "Angular",
+        "level": "30%"
+      },
+      {
+        "name": "CSS",
+        "level": "80%"
+      },
+      {
+        "name": "HTML5",
+        "level": "90%"
+      },
+      {
+        "name": "VueJs",
+        "level": "30%"
+      }
+    ]
+  },
+  "portfolio": {
+    "projects": [{
+        "title": "Restaurant Review",
+        "category": "Bei diesem Projekt habe ich das Design refactort, sodass es responsiv ist und für Screen Reader optimiert ist. Außerdem habe ich einige Inhalte auf Offline-First umgestellt.",
+        "image": "restaurant-review-screenshot.png",
+        "url": "https://hagenstrahl.github.io/restaurant-review/"
+      },
+      {
+        "title": "Arcade Game - Frogger Klon",
+        "category": "Bei diesem Arcade Game habe ich JavaScript Klassen benutzt, um die Funktionalität dieses Frogger-Klons zu erstellen. Dieses Projekt hat mir besonders viel Spaß gemacht, weil sich das Ergebnis wirklich sehen lassen kann.",
+        "image": "arcade-game-screenshot.png",
+        "url": "https://hagenstrahl.github.io/arcade-game/"
+      },
+      {
+        "title": "Memory Spiel",
+        "category": "Bei der Zertifizierung arbeitete ich an mehreren Projekten. Hier habe ich die Funktionalität für eine Memory Spiel programmiert.",
+        "image": "memory-game-screenshot.png",
+        "url": "https://hagenstrahl.github.io/memory-game/"
+      },
+      {
+        "title": "NEUCOM Website",
+        "category": "Dies ist die erste Website, an der ich gearbeitet habe. Meine Aufgabe war dabei die Konzeption und Umsetzung der Seite. Neucom ist ein Unternehmen für Hard- und Software Beschaffung, Einrichtung und Pflege.",
+        "image": "neucom-screenshot.png",
+        "url": "https://www.neucom.de/"
+      }
+    ]
+  }
+}
