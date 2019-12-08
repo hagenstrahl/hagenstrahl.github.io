@@ -5,28 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Stream</title>
-    <style>
-        html,
-        body,
-        iframe {
-            height: 100%;
-        }
-
-        body {
-            margin: 0;
-        }
-
-        iframe {
-            float: left;
-            width: 50%;
-        }
-    </style>
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Stream Community Status</title>
 </head>
 
 <body>
-    <iframe src="https://streamlabs.com/dashboard/recent-events" frameborder="0"></iframe>
-    <!-- <iframe src="https://chat.restream.io/chat" frameborder="0"></iframe> -->
-    <iframe src="https://www.youtube.com/live_chat?v=ev-5gK7w-lo&embed_domain=hagenstrahl.github.io" frameborder="0"></iframe>
+    <div class="settings-wrapper">
+        <div class="settings">
+            <select name="chat" id="selectChat">
+                <option value="nochat">No chat</option>
+                <option value="twitch">Twitch</option>
+                <option value="youtube">Youtube</option>
+                <!-- <option value="restream">Restream</option> -->
+            </select>
+            <input class="hidden" type="text" id="channel" placeholder="Channel ID">
+            <button id="openChat">Open</button>
+        </div>
+    </div>
+    <iframe class="streamlabs" src="https://streamlabs.com/dashboard/recent-events" frameborder="0"></iframe>
+    <iframe id="chat" src="nochat.html" frameborder="0"></iframe>
+    <script src="js/scripts.js" type="text/javascript"></script>
 </body>
+
 </html>
