@@ -3,8 +3,8 @@
     "name": "Hagen Strahl",
     "occupation": "Frontend Developer",
     "description": "Mein berufliches Leben hat schon viele Stationen gesehen, die meinen Erfahrungsschatz immer weiter wachsen lassen haben. Zu Programmieren war dabei mein ständiger Wegbegleiter. Nach harter Arbeit habe ich es nun endlich geschafft: Ich bin ein Frontend Developer",
-    "image": "Lichtbild.png",
-    "bio": "Geboren wurde ich Ende der Achtziger Jahre im wunderschönen Mecklenburg Vorpommern. Schon früh begeisterte ich mich für das Programmieren und auch während verschiedener Stationen in meinem Leben ließ es mich nie ganz los. Nach einer Ausbildung zum Fachinformatiker für Anwendungsentwicklung, vielen Jahren als System Administrator, einer angefangenen Ausbildung als Mediengestalter Digital/Print und zuletzt eine Zertifizierung bei Udacity. Erst vor Kurzem habe ich so richtig mit Web Frontend angefangen. Daher ist mir bewusst, dass ich noch am Anfang stehe und ich noch viel zu lernen habe. In diesem Beruf kann man sowieso nie auslernen. Jedoch habe ich schon ein paar persönliche Erfolge erzielen können, die Sie unter den Referenzen sehen können.",
+    "image": "Bewerbung-500.jpg",
+    "bio": "Geboren wurde ich Ende der Achtziger Jahre im wunderschönen Mecklenburg Vorpommern. Schon früh begeisterte mich das Programmieren und auch während verschiedener Stationen in meinem Leben ließ es mich nie ganz los. Eine Ausbildung zum Fachinformatiker für Anwendungsentwicklung, viele Jahren als System Administrator, einer angefangenen Ausbildung als Mediengestalter Digital/Print und zuletzt eine Zertifizierung bei Udacity. Jetzt starte ich so richtig als Web Frontend Developer durch. Mir ist bewusst, dass ich noch am Anfang stehe und ich noch viel zu lernen habe. In diesem Beruf kann man sowieso nie auslernen. Jedoch habe ich schon ein paar persönliche Erfolge erzielen können, die Sie unter den Referenzen sehen können.",
     "contactmessage": "Sie haben Fragen? Sie möchten mich kontaktieren? Dann benutzen Sie einfach das Formular oder rufen mich an. Ich freue mich von Ihnen zu hören.",
     "email": "hagen.strahl@gmail.com",
     "phone": "+49 172 1541020",
@@ -14,9 +14,10 @@
       "state": "(Your State)",
       "zip": "17235"
     },
-    "website": "http://www.timbakerdev.com",
-    "resumedownload": "https://drive.google.com/file/d/1GhmtPwtNgSk564TIS5vUzmAay9aLfc7s/view?usp=sharing",
-    "social": [{
+    "website": "",
+    "resumedownload": "https://drive.google.com/file/d/1hwVFfFapVdMZVfpeq428BmKMnFCSEmW1/view?usp=sharing",
+    "social": [
+      {
         "name": "linkedin",
         "url": "https://www.linkedin.com/in/hagenstrahl/",
         "className": "fa fa-linkedin"
@@ -30,7 +31,8 @@
   },
   "resume": {
     "skillmessage": "Wie es sich für einen Frontend Developer gehört, kenne ich natürlich unter anderem einige JavaScript-Technologien",
-    "education": [{
+    "education": [
+      {
         "school": "Zertifizierung - Udacity",
         "degree": "Frontend Developer",
         "graduated": "Aug 2019 - Nov 2019",
@@ -61,7 +63,8 @@
         "description": "Leistungsfächer: Mathematik, Physik, Informatik"
       }
     ],
-    "work": [{
+    "work": [
+      {
         "company": "KDW Technical Help GmbH",
         "title": "Sachbearbeiter",
         "years": "Mai 2019 - Jetzt",
@@ -92,7 +95,8 @@
         "description": "Umsetzung von Software-Produkten"
       }
     ],
-    "skills": [{
+    "skills": [
+      {
         "name": "TypeScript",
         "level": "50%"
       },
@@ -119,7 +123,8 @@
     ]
   },
   "portfolio": {
-    "projects": [{
+    "projects": [
+      {
         "title": "Restaurant Review",
         "category": "Bei diesem Projekt habe ich das Design refactort, sodass es responsiv ist und für Screen Reader optimiert ist. Außerdem habe ich einige Inhalte auf Offline-First umgestellt.",
         "image": "restaurant-review-screenshot.png",
